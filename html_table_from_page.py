@@ -6,7 +6,7 @@ options.headless = True
 driver = webdriver.Firefox(executable_path="../../../resources/geckodriver.exe", options=options)
 print(driver.name)
 driver.maximize_window()
-
+# Opening the browser.
 driver.get("http://www.cookbook.seleniumacademy.com/Locators.html")
 table = pandas.read_html(driver.page_source)[0]
 print(table)
